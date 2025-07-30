@@ -1,0 +1,128 @@
+/* General Page Styling */
+.header-section {
+    display: flex;                /* Side-by-side layout */
+    flex-direction: row-reverse;  /* Image on the right */
+    justify-content: center;      /* Center entire block horizontally */
+    align-items: center;          /* Vertically align image with text */
+    gap: 20px;                    /* Space between image and text */
+    padding: 40px 0;              /* Add some top and bottom spacing */
+}
+
+.profile-image {
+    width: 175px;                 /* Square image */
+    height: 120px;
+    border-radius: 0;             /* Square corners */
+    border: none;                 /* No border */
+}
+
+.header-text {
+    text-align: center;           /* Center text in its column */
+}
+
+.header-text h1, 
+.header-text h5, 
+.header-text h6 {
+    margin: 5px 0;                /* Reduce spacing between headings */
+}
+
+/* Headings */
+h1 {
+    color: #ffffff;
+    text-align: center;
+}
+h2 {
+    color: #ffffff;
+    text-align: left;
+}
+h4 {
+    color: #ffffff;
+    text-align: center;
+}  
+h5 {
+    color: #c8c7c7; /* light gray */
+    text-align: center;
+    font-style: italic; /* fixed italics */
+}   
+h6 {
+    color: #c8c7c7;
+    text-align: center;
+    font-style: italic; /* fixed italics */
+}
+
+/* General Body Styling */
+body {
+    background-color: #0b0841; /* dark blue background */
+    color: #ffffff; /* white text */
+    font-family: Calibri, cursive, sans-serif; /* Calibri font */
+    margin: 50px; /* margin around the body */
+    font-size: 16px; /* base font size */
+    line-height: 1.5; /* improved readability */
+    padding: 10px; /* padding around the body */
+}
+
+
+/* Paragraphs */
+p {
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Links */
+a {
+    color: #50fd00; /* bright green links */    
+    text-decoration: none; /* no underline */
+}
+a:hover {
+    color: #ff0000; /* red on hover */
+}
+
+/* Contact Section */
+.contact-info {
+    text-align: center;       /* Centers text */
+    margin: 40px auto;        /* Centers section horizontally */
+    max-width: 600px;
+}
+p.contact-info {
+    color: #ffffff;
+    font-size: 11px;
+}
+.contact-link {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    color: #50fd00;
+    text-decoration: underline;
+}
+
+/* Footer */
+footer.footer {
+    display: block;
+    width: 100%;             /* Full page width */
+    background-color: #333;  /* Dark footer */
+    color: white;
+    text-align: center !important; /* Force center */
+    padding: 20px 0;         /* Vertical spacing */
+    margin-top: 40px;
+}
+.footer p {
+    text-align: center; /* Force footer text to center */
+    margin: 0;
+    font-size: 14px;
+}
+footer.footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    h1, h2, h4, h5, h6 {
+        text-align: center;
+    }
+    .contact-info, .contact-link {
+        text-align: center;
+    }
+}
