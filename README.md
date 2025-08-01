@@ -60,11 +60,17 @@ Includes a clickable link to my published book: "Once, There Was A Star"
 
 Showcases my projects with brief descriptions and direct links, including:
 Python Calculator App (GitHub link)
+
 Portfolio Website (GitHub link)
+
 Film Production Project (YouTube link)
+
 Color Quiz App (GitHub link)
+
 Greeting App (GitHub link)
+
 Joke Generator (GitHub link)
+
 My First Portfolio (GitHub link)
 
 
