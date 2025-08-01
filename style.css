@@ -1,35 +1,48 @@
 /* General Page Styling */
+/* === HEADER WRAPPER === */
+.header-wrapper {
+    display: flex;
+    justify-content: center;  /* Centers header block */
+    margin: 30px 0;           /* Space above and below */
+}
+
+/* === HEADER SECTION === */
 .header-section {
-    display: inline-flex;         /* Shrink to fit content */
-    flex-direction: row-reverse;  /* Image on the right */
-    justify-content: center;      /* Center entire block horizontally */
-    align-items: center;          /* Vertically align image with text */
-    gap: 20px;                    /* Space between image and text */
-    padding: 40px 20px;           /* Padding around the header */
-    background-color: #0fab0f;  /* Green background for header */
-    border-radius: 10px;          /* Rounded corners for header */
-    text-align: center;           /* Center text in header */
-    margin: 0 auto 30px auto;     /* Center header block with bottom margin */
+    display: flex;
+    flex-direction: row-reverse; /* Image on the right */
+    align-items: center;
+    gap: 20px;
+    padding: 20px 30px;          /* Tighter padding so background isn't too large */
+    background-color: #0fab0f;
+    border-radius: 10px;
+    text-align: center;          /* Center headings */
 }
 
+/* === HEADER IMAGE === */
 .profile-image {
-    width: 175px;                 /* Square image */
-    height: 120px;                /* Fixed height */
-    border-radius: 0;             /* Square corners */
-    border: none;                 /* No border */
+    width: 150px;
+    height: 110px;
+    border-radius: 0;
+    border: none;
 }
 
-.header-text {                    /* Text section in the header */
-    text-align: center;           /* Center text in its column */
-    display: flex;                /* Flexbox for text alignment */
-    flex-direction: column;       /* Stack text vertically */
-    justify-content: center;      /* Center text vertically */
+/* === HEADER TEXT === */
+.header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 .header-text h1,
-.header-text h5, 
+.header-text h5,
 .header-text h6 {
-    margin: 5px 0;                /* Reduce spacing between headings */
+    margin: 5px 0;
+}
+
+h5, h6 {
+    font-style: italic;
+    color: #c8c7c7; /* light gray */
 }
 
 /* Headings */
@@ -151,20 +164,14 @@ footer.footer p {         /* Footer paragraph styling */
 }
 
 /* Responsive Design for Smaller Screens */
-@media (max-width: 600px) { /* Media query for small screens */
-    body { 
-        font-size: 14px;
-    }
-    h1, h2, h4, h5, h6 { 
-        text-align: center;
-    }
-    .contact-info, .contact-link {
-        text-align: center;
-    }
+/* === MOBILE RESPONSIVE === */
+@media (max-width: 600px) {
     .header-section {
-        display: flex; /* Switch to flexbox for smaller screens */
-        width: 100%; /* Full width for header */
-        box-sizing: border-box; /* Include padding in width calculation */
-        border-radius: 0; /* Remove rounded corners for smaller screens */  
+        flex-direction: column;  /* Stack image above text */
+        width: auto;             /* Let it wrap the content */
+        text-align: center;
+    }
+    .profile-image {
+        margin-bottom: 10px;     /* Space between image and text */
     }
 }
