@@ -78,7 +78,7 @@ My First Portfolio (GitHub link)
 
 A simple call-to-action inviting collaboration.
 
-Direct Gmail compose link for easy contact.
+Direct Google Form compose link for easy contact.
 
 Styled with centered text and link.
 
