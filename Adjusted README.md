@@ -146,7 +146,7 @@ Copy
 
 Edit
 
-git clone https://github.com/M-Yobby/PLP\_ASSIGNMENTS\_Week2Flask.git
+git clone (https://github.com/M-Yobby/My-First-Portfolio.git)
 
 Open the project folder:
 
