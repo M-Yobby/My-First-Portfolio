@@ -1,6 +1,6 @@
 /* General Page Styling */
 .header-section {
-    display: flex;                /* Side-by-side layout */
+    display: inline-flex;         /* Shrink to fit content */
     flex-direction: row-reverse;  /* Image on the right */
     justify-content: center;      /* Center entire block horizontally */
     align-items: center;          /* Vertically align image with text */
