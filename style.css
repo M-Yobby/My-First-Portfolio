@@ -5,46 +5,50 @@
     justify-content: center;      /* Center entire block horizontally */
     align-items: center;          /* Vertically align image with text */
     gap: 20px;                    /* Space between image and text */
-    padding: 40px 0;              /* Add some top and bottom spacing */
+    padding: 40px 20px;           /* Padding around the header */
+    background-color: #0fab0f;  /* Green background for header */
+    border-radius: 10px;          /* Rounded corners for header */
+    margin-bottom: 30px;          /* Space below the header */
 }
 
 .profile-image {
     width: 175px;                 /* Square image */
-    height: 120px;
+    height: 120px;                /* Fixed height */
     border-radius: 0;             /* Square corners */
     border: none;                 /* No border */
 }
 
-.header-text {
+.header-text {                    /* Text section in the header */
     text-align: center;           /* Center text in its column */
 }
 
-.header-text h1, 
+.header-text h1,
 .header-text h5, 
 .header-text h6 {
     margin: 5px 0;                /* Reduce spacing between headings */
 }
 
 /* Headings */
-h1 {
-    color: #ffffff;
-    text-align: center;
+h1 {                              /* Main title styling */
+    color: #ffffff;             /* white */
+    text-align: center;           /* Centered main title */
+    font-size: 2.0em;             /* Larger font size for main title */
 }
-h2 {
-    color: #ffffff;
-    text-align: left;
+h2 { /* Section title styling */
+    color: #ffffff; /* white */
+    text-align: center; /* Centered section titles */
 }
-h4 {
-    color: #ffffff;
+h4 { /* Subsection title styling */
+    color: #ffffff; /* white */
     text-align: center;
 }  
-h5 {
+h5 { /* Subtitle styling */
     color: #c8c7c7; /* light gray */
     text-align: center;
     font-style: italic; /* fixed italics */
 }   
-h6 {
-    color: #c8c7c7;
+h6 { /* Additional subtitle styling */
+    color: #c8c7c7; /* light gray */
     text-align: center;
     font-style: italic; /* fixed italics */
 }
@@ -64,62 +68,90 @@ body {
 /* Paragraphs */
 p {
     color: #ffffff;
-    text-align: left;
+    text-align: justified; /* justified text for paragraphs */
 }
 
-/* Links */
-a {
-    color: #50fd00; /* bright green links */    
-    text-decoration: none; /* no underline */
+.section-separator { /* Horizontal line to separate sections */
+    width: 60%;            /* Adjust to match paragraph width */
+    max-width: 600px;      /* Same as the centered block width */
+    margin: 40px auto;     /* Center horizontally with top/bottom spacing */
+    border: none;          /* Remove default styles */
+    border-top: 2px solid white; /* White line */
+    opacity: 0.6;          /* Optional: softer line */
 }
-a:hover {
-    color: #ff0000; /* red on hover */
+
+
+/* Links */
+a {                       /* Link styling */
+    color: #50fd00;     /* bright green links */    
+    text-decoration: none;/* no underline */
+}
+a:hover {                 /* Link hover effect */
+    color: #ff0000;     /* red on hover */
+}
+
+.center-block {           /* Centered block for content */
+    max-width: 600px;     /* Make it narrow like a column */
+    margin: 40px auto;    /* Center block horizontally */
+    text-align: left;     /* Text aligns naturally inside */
+}
+
+.center-block a {          /* Centered link styling */
+    display: inline;       /* Link behaves like text */
+    text-align: center;    /* Optional: Center the link itself */
+    margin-top: 10px;      /* Space above the link */
+}
+
+.education-link {          /* Centered link for education section */
+    text-align: center;    /* Center the link */
+    margin: 20px auto;     /* Center the link horizontally */
+    max-width: 600px;      /* Limit width */
 }
 
 /* Contact Section */
-.contact-info {
-    text-align: center;       /* Centers text */
-    margin: 40px auto;        /* Centers section horizontally */
-    max-width: 600px;
+.contact-info {             /* Contact information section */
+    text-align: center;     /* Centers text */
+    margin: 40px auto;      /* Centers section horizontally */
+    max-width: 600px;       /* Limit width for readability */
 }
-p.contact-info {
-    color: #ffffff;
-    font-size: 11px;
+p.contact-info {            /* Paragraph in contact section */
+    color: #ffffff;       /* white text */
+    font-size: 11px;        /* Smaller font size for contact info */
 }
-.contact-link {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 600px;
-    color: #50fd00;
-    text-decoration: underline;
+.contact-link {             /* Contact link styling */
+    text-align: center;     /* Center the contact link */
+    margin: 20px auto;      /* Center the link horizontally */
+    max-width: 600px;       /* Limit width for readability */
+    color: #50fd00;       /* bright green */
+    text-decoration: underline; /* Underline for contact link */
 }
 
 /* Footer */
-footer.footer {
-    display: block;
-    width: 100%;             /* Full page width */
+footer.footer {                /* Footer styling */
+    display: block;            /* Block display for footer */
+    width: 100%;               /* Full page width */
     background-color: #333;  /* Dark footer */
-    color: white;
+    color: white;            /* White text */
     text-align: center !important; /* Force center */
-    padding: 20px 0;         /* Vertical spacing */
-    margin-top: 40px;
+    padding: 20px 0;           /* Vertical spacing */
+    margin-top: 40px;          /* Space above footer */
 }
-.footer p {
-    text-align: center; /* Force footer text to center */
-    margin: 0;
-    font-size: 14px;
+.footer p {               /* Paragraph in footer */
+    text-align: center;   /* Force footer text to center */
+    margin: 0;            /* No margin */
+    font-size: 14px;      /* Font size for footer text */
 }
-footer.footer p {
-    margin: 0;
-    font-size: 14px;
+footer.footer p {         /* Footer paragraph styling */
+    margin: 0;            /* No margin */
+    font-size: 14px;      /* Font size for footer text */
 }
 
 /* Responsive Design for Smaller Screens */
-@media (max-width: 600px) {
-    body {
+@media (max-width: 600px) { /* Media query for small screens */
+    body { 
         font-size: 14px;
     }
-    h1, h2, h4, h5, h6 {
+    h1, h2, h4, h5, h6 { 
         text-align: center;
     }
     .contact-info, .contact-link {

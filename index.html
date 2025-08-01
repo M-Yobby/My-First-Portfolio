@@ -8,32 +8,37 @@
 </head>
 
 <body> <!-- Body section containing the content of the portfolio -->
-    <header> <!-- Header section with the main title and subtitle -->
-        <header class="header-section"> <!-- I learned that you cannot style some things in CSS without classes -->
+    <header class = "header-section"> <!-- Header section with the main title and subtitle. I learned that you cannot style some things in CSS without classes -->
         <img src="assets/My-Pic.JPG" alt="Meshack Yobby image" class="profile-image"> <!-- Profile image with alt text -->
 
     <div class="header-text"> <!-- Division for header text -->
         <h1>Meshack Yobby Portfolio</h1> <!-- Main title of the portfolio -->
         <h5>I Swear I Know What I'm Doing!</h5> <!-- Subtitle for the portfolio -->
-        <h6>Sometimes</h6>
+        <h6>(sometimes)</h6>
     </div>
     </header>
 
     <main> <!-- Main section containing the content of the portfolio -->
-        <section> <!-- Section for personal introduction -->
-            <h2>About Me</h2>
-            <p>I'm a creative individual with a passion for tech. At this point, I am less green than when the cohort started. 
-                (I was completely green then). May I remember my humble beginning as a Calculator app programmer.</p> <!-- Brief introduction about me -->
+        <section class = "center-block"> <!-- Section for personal introduction -->
+            <h2>About Me</h2>            <!-- Section for personal introduction -->
+            <p>I'm a creative individual with a passion for tech. At this point, I am less green than when the cohort started. (I was completely green then).</p>
+            <p>May I remember my humble beginning as a Calculator app programmer.</p> <!-- Brief introduction about me -->
         </section>
-
-        <section> <!-- Section for educational background -->
-            <h2>Educational Background</h2>
+        
+        <hr class="section-separator"> <!-- Horizontal rule to separate sections -->
+        
+        <section class = "center-block"> <!-- Section for educational background -->
+            <h2>Educational Background</h2> <!-- Section for educational background -->
             <p>I hold a diploma in film production from JKUAT and Media Development in Africa (MEDEVA)</p>
             <p>Currently pursuing PLP's Fully Funded Software Development Scholarship</p>
+        <div class="education-link"> <!-- Division for education link -->
             <a href ="assets/Meshack_Yobby_CV_2025.pdf" target="_blank">Download my CV</a> <!-- Link to download my CV -->
-        </section> 
-        
-        <section> <!-- Section for listing interests -->
+        </div> 
+        </section>
+
+        <hr class="section-separator"> <!-- Horizontal rule to separate sections -->
+
+        <section class = "center-block"> <!-- Section for listing interests -->
             <h2>Interests</h2> <!-- Section for listing interests -->
             <p>Here are some of my interests:</p>
             <ul> <!-- Unordered list of interests -->
@@ -41,29 +46,46 @@
                 <li>Film: This is my current occupation.</li>
                 <li>Music: Music speaks to the soul.</li>
                 <li>Tea: Easiest way to kidnap me is through mzinga ya chai.</li>
-                <li>Writing: Newspaper correspondent, author of
-                    <a href = "https://nuriakenya.com/product/once-there-was-a-star-by-meshack-yobby/" target="_blank">"Once, There Was A Star"</a></li>
+                <li>Writing: Newspaper correspondent, author of <a href = "https://nuriakenya.com/product/once-there-was-a-star-by-meshack-yobby/" target="_blank">"Once, There Was A Star"</a></li>
             </ul> <!-- End of unordered list of interests -->
         </section>
-        
-        <section> <!-- Section for showcasing projects -->
+
+        <hr class="section-separator">  <!-- Horizontal rule to separate sections -->
+
+        <section class = "center-block"> <!-- Section for showcasing projects -->
             <h2>Projects</h2> <!-- Section for showcasing projects -->
             <p>Here are some of the projects I've worked on:</p>
             <ol> <!-- Ordered list of projects -->
                 <li>
                     <a href="https://github.com/M-Yobby/PLP_ASSIGNMENTS_Week1Python.git" target="_blank">Calculator App</a>: A simple calculator application I built to practice Python programming.</li>
                 <li>
-                    <a href="https://youtu.be/ZRPi2RoSnmI?feature=shared" target="_blank">Crew in music competition shows</a>: A showcase of my work and skills.</li>
+                    <a href="https://youtu.be/ZRPi2RoSnmI?feature=shared" target="_blank">TV show</a>: A showcase of my work and skills.</li>
                 <li>
-                    <a href="https://github.com/M-Yobby/PLP_ASSIGNMENTS_Week2Flask.git" target="_blank">Portfolio Website</a>: A showcase of my work and skills.
+                    <a href="https://github.com/M-Yobby/PLP-Color-Quiz.git" target="_blank">Color Quiz</a>: A fun quiz application to test your knowledge of colors.
                 </li>
+                <li>
+                    <a href="https://github.com/M-Yobby/Greeting-App.git" target="_blank">Greeting App</a>: A simple application that greets users with a personalized message.</li>
+                <li>
+                    <a href="https://github.com/M-Yobby/Joke-Generator.git" target="_blank">Joke Generator</a>: An application that generates random jokes to brighten your day.</li>
             </ol>
         </section>
-        
+
+        <hr class="section-separator"> <!-- Horizontal rule to separate sections -->
+
+        <section class = "center-block"> <!-- Section for listing programming languages -->
+            <h2>Programming Languages</h2> <!-- Section for listing programming languages -->
+            <ul> <!-- Unordered list of programming languages -->
+                <li>Python: A versatile language for various applications.</li>
+                <li>HTML/CSS: (But why do devs say HTML is not a programming language?)</li>
+            </ul> <!-- End of unordered list of programming languages -->
+        </section>
+
+        <hr class="section-separator"> <!-- Horizontal rule to separate sections -->
+
         <section class ="contact-info"> <!-- Section for contact information -->
             <h4>Feel free to reach out!</h4> <!-- Section for contact information -->
             <p>If you have any questions or just want to say hi, feel free to reach out to me via email at:</p>
-            <div class="contact-link">
+            <div class="contact-link"> <!-- Division for contact link -->
                 <a href="https://mail.google.com/mail/?view=cm&fs=1&to=meshackyobby@gmail.com" target="_blank">Contact</a>
             </div>
         </section>
@@ -72,6 +94,6 @@
     <footer class ="footer"> <!-- Footer section with copyright information -->
         <p>&copy; 2025 Meshack Yobby. All rights reserved.</p> 
     
-    </footer>
-</body>
-</html>
+    </footer> 
+</body> 
+</html> 
