@@ -8,9 +8,8 @@
     padding: 40px 20px;           /* Padding around the header */
     background-color: #0fab0f;  /* Green background for header */
     border-radius: 10px;          /* Rounded corners for header */
-    margin-bottom: 30px;          /* Space below the header */
-    width: 100vw;                  /* Full width of the viewport */
-    margin-left: -50px;            /* Adjust to align with body margin */
+    text-align: center;           /* Center text in header */
+    margin: 0 auto 30px auto;     /* Center header block with bottom margin */
 }
 
 .profile-image {
@@ -22,6 +21,9 @@
 
 .header-text {                    /* Text section in the header */
     text-align: center;           /* Center text in its column */
+    display: flex;                /* Flexbox for text alignment */
+    flex-direction: column;       /* Stack text vertically */
+    justify-content: center;      /* Center text vertically */
 }
 
 .header-text h1,
@@ -158,5 +160,11 @@ footer.footer p {         /* Footer paragraph styling */
     }
     .contact-info, .contact-link {
         text-align: center;
+    }
+    .header-section {
+        display: flex; /* Switch to flexbox for smaller screens */
+        width: 100%; /* Full width for header */
+        box-sizing: border-box; /* Include padding in width calculation */
+        border-radius: 0; /* Remove rounded corners for smaller screens */  
     }
 }
