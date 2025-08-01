@@ -57,7 +57,7 @@ h6 { /* Additional subtitle styling */
 body {
     background-color: #0b0841; /* dark blue background */
     color: #ffffff; /* white text */
-    font-family: Calibri, sans-serif; /* Calibri font */
+    font-family: 'Roboto', Arial, sans-serif; /* Use Roboto font with fallback */
     margin: 50px; /* margin around the body */
     font-size: 16px; /* base font size */
     line-height: 1.5; /* improved readability */
