@@ -172,17 +172,9 @@ Open index.html in your favorite web browser (e.g., Chrome, Edge, Firefox).
 
 🌐 Live Demo
 
-If deployed via GitHub Pages or Netlify, link it here:
+Deployed via GitHub Pages on: https://m-yobby.github.io/My-First-Portfolio/
 
 
-
-arduino
-
-Copy
-
-Edit
-
-https://your-username.github.io/portfolio/
 
 📱 Responsive Design
 
