@@ -87,13 +87,29 @@
 
         <hr class="section-separator"> <!-- Horizontal rule to separate sections -->
 
-        <section class ="contact-info"> <!-- Section for contact information -->
-            <h4>Feel free to reach out!</h4> <!-- Section for contact information -->
-            <p>If you have any questions or just want to say hi, feel free to reach out to me via email at:</p>
-            <div class="contact-link"> <!-- Division for contact link -->
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=meshackyobby@gmail.com" target="_blank">Contact</a>
+        <section class = "center-block"> <!-- Section for contact information -->
+           <div class="contact-link">
+            <h2>Get In Touch</h2> <!-- Section for contact information -->
+            <p>If you'd like to get in touch for collaborations or just to say hi, feel free to reach out!</p>
+                <button onclick="contactMe()">Contact Me</button> <!-- Button to trigger contact action -->
             </div>
+
+            <script>
+                function contactMe() { // Function to handle contact action
+                    // Try Gmail first
+                    const gmailUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=meshackyobby@gmail.com";
+
+                // Check if user is on desktop Chrome/Edge (better Gmail handling)
+                if (navigator.userAgent.includes("Chrome") || navigator.userAgent.includes("Edg")) {
+                window.open(gmailUrl, "_blank"); // Open Gmail in a new tab
+                } else {
+                // Fallback to default email app
+                window.location.href = "mailto:meshackyobby@gmail.com";
+                }
+                }   
+            </script>
         </section>
+
     </main>
     
     <footer class ="footer"> <!-- Footer section with copyright information -->

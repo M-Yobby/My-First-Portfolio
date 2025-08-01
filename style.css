@@ -100,8 +100,8 @@ p {
 
 /* Links */
 a {                       /* Link styling */
-    color: #50fd00;     /* bright green links */    
-    text-decoration: none;/* no underline */
+    color: #50fd00;       /* bright green links */
+    text-decoration: none; /* no underline */
 }
 a:hover {                 /* Link hover effect */
     color: #ff0000;     /* red on hover */
@@ -135,12 +135,25 @@ p.contact-info {            /* Paragraph in contact section */
     color: #ffffff;       /* white text */
     font-size: 11px;        /* Smaller font size for contact info */
 }
-.contact-link {             /* Contact link styling */
-    text-align: center;     /* Center the contact link */
-    margin: 20px auto;      /* Center the link horizontally */
-    max-width: 600px;       /* Limit width for readability */
-    color: #50fd00;       /* bright green */
-    text-decoration: underline; /* Underline for contact link */
+.contact-link button {
+    text-align: center !important; /* Center text in button */
+    display: inline-block; /* Button-like appearance */
+    color:  #50fd00;  /* bright green text */
+    margin-top: 20px; /* Space above button */
+    background-color: transparent; /* No background color */
+    padding: 10px 20px; /* Padding for button */
+    border: none;
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 14px; /* Font size for button */
+}
+
+.contact-link {
+    text-align: center; /* Center the button inside this container */
+}
+
+.contact-link button:hover {
+    color: red;
+
 }
 
 /* Footer */
