@@ -9,8 +9,8 @@
     background-color: #0fab0f;  /* Green background for header */
     border-radius: 10px;          /* Rounded corners for header */
     margin-bottom: 30px;          /* Space below the header */
-
-    align-items: stretch;         /* Stretch items to fill container */
+    width: 100vw;                  /* Full width of the viewport */
+    margin-left: -50px;            /* Adjust to align with body margin */
 }
 
 .profile-image {
